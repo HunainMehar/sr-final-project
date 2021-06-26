@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --btn: #edab2f;
+  --primary: beige;
+  --sub: #212121;
+}
+
+body {
+  font-family: "Flamenco", cursive;
+}
+
+.icons {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.icons a {
+  font-size: 25px;
+  transition: color 1s ease;
+  color: #edab2f;
+  padding-right: 10px;
+}
+
+.icons a:hover {
+  color: var(--primary);
+}
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/pexels-kawser-hamid-176342.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#navbar {
+  padding-left: 55px;
+}
+.navbar {
+  font-size: 25px;
+  /* padding-right: 20px; */
+  /* transition: padding 2s ease; */
+}
+.nav-link {
+  color: var(--primary);
+  /* transition: color 1s ease; */
+}
+.nav-link:hover {
+  color: var(--btn);
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+.nav-active {
+  color: var(--btn);
+}
+/* main section */
+
+.banner {
+  padding-top: 8%;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  text-align: center;
+  color: var(--btn);
+}
+
+.heading h1 {
+  font-weight: bold;
+}
+
+.btn-main {
+  color: var(--primary);
+
+  font-weight: bold;
+  border-radius: 10px;
+  background: var(--btn);
+}
+.btn-main:hover .btn-main:focus .btn-main:active {
+  opacity: 75%;
+  color: var(--primary);
+  transition: background 1s ease;
+  /* font-weight: bold; */
+}
+
+#button {
+  padding-top: 15%;
+}
+/* about section  */
+
+.about {
+  height: 100vh;
+}
+
+.about h5 {
+  font-size: 16px;
+}
+
+.about h2 {
+  color: var(--btn);
+}
+.about .title-border {
+  content: "";
+  width: 30%;
+  height: 2px;
+  display: block;
+  background: block;
+  background-color: var(--btn);
+  border-radius: 50%;
+  margin: 1%;
+  margin-left: 35%;
+}
+
+.about p {
+  font-size: 18px;
+}
+
+.fas {
+  color: var(--btn);
+}
+
+.row h5 {
+  font-size: 20px;
+  color: var(--btn);
+}
+
+/* project section */
+
+.projects {
+  background: var(--btn);
+  color: var(--primary);
+  height: 100vh;
+}
+
+.projects .title-border {
+  content: "";
+  width: 30%;
+  height: 2px;
+  display: block;
+  background: block;
+  background-color: var(--primary);
+  border-radius: 50%;
+  margin: 1%;
+  margin-left: 35%;
+}
+
+.project-container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: var(--btn);
+  box-shadow: 0 5px 10px var(--primary);
+  cursor: pointer;
+}
+
+.project-container .img-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.project-container .img-content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.project-container:hover .img-content img {
+  opacity: 0;
+}
+
+.project-container .content {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 60px;
+  /* background: var(--primary); */
+  color: #212121;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.project-container:hover .content {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.project-container.content h3 {
+  font-size: 20px;
+}
+
+.project-container .content p {
+  margin: 10px 0 0;
+  opacity: 0;
+  line-height: 18px;
+  transition: 0.5s;
+  text-align: justify;
+}
+
+.project-container:hover .content p {
+  opacity: 1;
+  transition-delay: 0.4s;
+}
+
+/* services */
+
+#SERVICES .title-border {
+  content: "";
+  width: 30%;
+  height: 2px;
+  display: block;
+  background: block;
+  background-color: var(--btn);
+  border-radius: 50%;
+  margin: 1%;
+  margin-left: 35%;
+}
+.service-pic img {
+  width: 100%;
+}
+.service-inner-wrapper {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.left-service-item {
+  position: relative;
+  padding-right: 90px;
+  margin-bottom: 65px;
+  text-align: right;
+  margin-top: 35px;
+}
+.left-icon {
+  position: absolute;
+  right: 0;
+  top: -8px;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+}
+.left-service-item h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 21px;
+  color: var(--btn);
+}
+.left-service-item p {
+  color: var(--sub);
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 25px;
+}
+.right-service-item {
+  position: relative;
+  padding-left: 90px;
+  margin-bottom: 65px;
+  margin-top: 35px;
+  text-align: left;
+}
+.right-icon {
+  position: absolute;
+  left: 0;
+  top: -8px;
+  color: var(--btn);
+  width: 90px;
+  height: 90px;
+  text-align: center;
+}
+.right-service-item h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 21px;
+  color: var(--btn);
+}
+.right-service-item p {
+  color: var(--sub);
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 25px;
+}
+
+/*Testimonial*/
+.all {
+  background: var(--btn);
+}
+.des-color {
+  color: var(--primary);
+}
+.main-img {
+  width: 150px;
+}
+.testimonial p {
+  font-weight: bold;
+  color: var(--primary);
+}
+.testimonial h2 {
+  font-weight: bold;
+  color: var(--primary);
+}
+/* end of the Carousel*/
+
+/*FORM */
+
+.contact-us .title-border {
+  content: "";
+  width: 30%;
+  height: 2px;
+  display: block;
+  background: block;
+  background-color: var(--btn);
+  border-radius: 50%;
+  margin: 1%;
+  margin-left: 35%;
+}
+.contact .fas {
+  color: var(--btn);
+}
+.contact .far {
+  color: var(--btn);
+}
+.btn-cont {
+  background: var(--btn);
+  color: var(--primary);
+}
+.btn-cont:hover {
+  color: var(--primary);
+  border-radius: 10px 20px 10px 20px;
+}
