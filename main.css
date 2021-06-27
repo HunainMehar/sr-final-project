@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --btn: #edab2f;
-  --primary: beige;
-  --sub: #212121;
+  --primary: #212121;
+  --sub: beige;
 }
 
 body {
@@ -27,7 +31,7 @@ body {
 }
 
 .icons a:hover {
-  color: var(--primary);
+  color: var(--sub);
 }
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -46,11 +50,12 @@ body {
   /* transition: padding 2s ease; */
 }
 .nav-link {
-  color: var(--primary);
+  color: var(--sub);
   /* transition: color 1s ease; */
 }
 .nav-link:hover {
   color: var(--btn);
+  transform: scale(1.1);
 }
 
 .navbar-toggler {
@@ -77,7 +82,7 @@ body {
 }
 
 .btn-main {
-  color: var(--primary);
+  color: var(--sub);
 
   font-weight: bold;
   border-radius: 10px;
@@ -85,9 +90,12 @@ body {
 }
 .btn-main:hover .btn-main:focus .btn-main:active {
   opacity: 75%;
-  color: var(--primary);
+  color: var(--sub);
   transition: background 1s ease;
   /* font-weight: bold; */
+}
+.btn-main:hover {
+  transform: scale(1.1);
 }
 
 #button {
@@ -95,7 +103,8 @@ body {
 }
 /* about section  */
 
-.about {
+#abouts {
+  background: var(--primary);
   height: 100vh;
 }
 
@@ -120,6 +129,7 @@ body {
 
 .about p {
   font-size: 18px;
+  color: var(--sub);
 }
 
 .fas {
@@ -135,7 +145,7 @@ body {
 
 .projects {
   background: var(--btn);
-  color: var(--primary);
+  color: var(--sub);
   height: 100vh;
 }
 
@@ -145,7 +155,7 @@ body {
   height: 2px;
   display: block;
   background: block;
-  background-color: var(--primary);
+  background-color: var(--sub);
   border-radius: 50%;
   margin: 1%;
   margin-left: 35%;
@@ -179,6 +189,7 @@ body {
 
 .project-container:hover .img-content img {
   opacity: 0;
+  transform: scale(1.1);
 }
 
 .project-container .content {
@@ -217,7 +228,10 @@ body {
 }
 
 /* services */
-
+#SERVICES {
+  background: var(--primary);
+  color: var(--sub);
+}
 #SERVICES .title-border {
   content: "";
   width: 30%;
@@ -315,7 +329,10 @@ body {
 /* end of the Carousel*/
 
 /*FORM */
-
+#contactus {
+  background: var(--primary);
+  color: var(--sub);
+}
 .contact-us .title-border {
   content: "";
   width: 30%;
@@ -340,4 +357,11 @@ body {
 .btn-cont:hover {
   color: var(--primary);
   border-radius: 10px 20px 10px 20px;
+}
+
+/* footer */
+footer {
+  background: var(--btn);
+  font-size: 20px;
+  color: var(--sub);
 }
