@@ -18,6 +18,18 @@ body {
   font-family: "Flamenco", cursive;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  /* display: none; */
+}
+
+.fixed-top.scrolled {
+  background-color: var(--primary) !important;
+  transition: background-color 200ms linear;
+}
+
 .icons {
   text-decoration: none;
   color: var(--primary);
@@ -62,7 +74,7 @@ body {
   outline: none !important;
 }
 
-.nav-active {
+ul li.active a {
   color: var(--btn);
 }
 /* main section */
